@@ -1,6 +1,8 @@
 import { Header } from "../../common/Header";
 import { Wrapper } from "../../common/Wrapper/index.js";
-import { Button, Item, List, ModelName, Section } from "./styled";
+import { Link } from "react-router-dom";
+
+import { Button, Item, List, ModelName, Section, StyledLink } from "./styled";
 
 
 const ModelsList = ({ modelsList }) => {
@@ -12,12 +14,16 @@ const ModelsList = ({ modelsList }) => {
 
       <Section>
         <List>
-          {modelsList.map( model => (
+          {modelsList.map(model => (
             <Item
               key={model.id}
             >
-              <ModelName>{model.nazwa}</ModelName>
-              <Button>Pokaż szczegóły</Button>
+              <ModelName>
+                <StyledLink to={`modelsList/${model.id}`}>{model.nazwa}</StyledLink>
+              </ModelName>
+              <Link to={`modelsList/${model.id}`}>
+                <Button>Pokaż szczegóły</Button>
+              </Link>
               <Button>Usuń model</Button>
             </Item>
           ))}
