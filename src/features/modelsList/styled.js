@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Section = styled.section`
   margin: 10px 0;
@@ -17,7 +18,7 @@ export const List = styled.ul`
 export const Item = styled.li`
   font-size: 18px; 
   padding: 10px 0;
-  border-bottom: solid 1px #025a28;
+  border-bottom: solid 2px #025a28;
   display: flex;
   align-items: center;
   word-break: break-word; 
@@ -27,6 +28,21 @@ export const ModelName = styled.span`
   padding: 0px 15px;
   flex-grow: 1;
 `; 
+
+export const StyledLink = styled(Link)`
+  color:  white; 
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+      filter: brightness(80%);
+      cursor: pointer;
+  }
+
+  &:active {
+      filter: brightness(70%);
+  }
+`;
 
 export const Button = styled.button`
   color: white;
@@ -42,11 +58,12 @@ export const Button = styled.button`
   margin-right: 0px;
 
   &:hover {
-      filter: brightness(110%);
-      cursor: pointer;
+    filter: brightness(110%);
+    cursor: pointer;
   }
 
   &:active {
-      filter: brightness(120%);
+    filter: brightness(120%);
   }
 `;
+
