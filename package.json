@@ -2,7 +2,7 @@
   "name": "zadanie-rekrutacyjne-asseco",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/PawelUrbanowski074/zadanie-rekrutacyjne-asseco/",
+  "homepage": "https://PawelUrbanowski074.github.io/zadanie-rekrutacyjne-asseco/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
