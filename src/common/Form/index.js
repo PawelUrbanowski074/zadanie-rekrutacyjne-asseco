@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   max-width: 600px;
@@ -7,6 +7,10 @@ export const Container = styled.div`
   background-color: #007834;
   border-radius: 3px;
   box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
+
+  ${({ big }) => big && css`
+    max-width: 800px;
+  `}
 `;
 
 export const Title = styled.h2`
@@ -17,6 +21,11 @@ export const Title = styled.h2`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+  margin: 0 60px;
+
+  @media (max-width: 767px) {
+    margin: 0 20px;
+  }
 `;
 
 export const Field = styled.div`
@@ -27,12 +36,24 @@ export const Field = styled.div`
   color: white;
   font-size: 22px;
   margin-bottom: 20px;
+
+  ${({ equalGrid }) => equalGrid && css`
+    grid-template-columns: 1fr 1fr;
+  `}
+
+  ${({ buttons }) => buttons && css`
+    grid-template-columns: 1fr 1fr;
+  `}
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Input = styled.input`
   background-color: #025a28;
   color: white;
-  padding: 5px 10px;
+  padding: 5px 20px;
   font-size: 16px;
   height: 40px;
   border-radius: 3px;
@@ -63,6 +84,11 @@ export const Button = styled.button`
   align-self: center;
   transition: all 0.3s ease-in-out;
 
+  ${({ centerText }) => centerText && css`
+    text-align: center;
+    display: inline;
+  `}
+
   &:active {
     border: 2px solid #283754;
   }
@@ -86,4 +112,8 @@ export const ButtonText = styled.div`
 
 export const Arrow = styled.div`
 
+`;
+
+export const Option = styled.option`
+  background-color:  #025a28;
 `;
