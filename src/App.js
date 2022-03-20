@@ -56,8 +56,7 @@ const App = () => (
   </HashRouter>
 
   // <Wrapper>
-  //   {/* <Authentications /> */}
-  //   <ModelsList modelsList={modelsList} />
+  //   <Authentications />
   // </Wrapper>
 )
 

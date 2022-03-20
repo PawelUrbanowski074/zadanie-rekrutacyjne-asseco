@@ -1,10 +1,11 @@
 import { Header } from "../../common/Header";
-import { Arrow, Button, ButtonText, Field, Form, Input, Title, Wrapper } from "./styled";
+import { Wrapper } from "../../common/Wrapper/index.js";
+import { Arrow, Button, ButtonText, Container, Field, Form, Input, Title } from "./styled";
 
 const Authentications = () => (
-  <>
+  <Wrapper>
     <Header>Logowanie</Header>
-    <Wrapper>
+    <Container>
       <Title>Zaloguj do serwisu</Title>
       <Form>
         <Field>
@@ -20,8 +21,8 @@ const Authentications = () => (
           <Arrow>{'>'}</Arrow>
         </Button>
       </Form>
-    </Wrapper>
-  </>
+    </Container>
+  </Wrapper>
 )
 
 export default Authentications;
