@@ -1,17 +1,20 @@
+import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { Header } from "../../common/Header";
 import { Wrapper } from "../../common/Wrapper/index.js";
+import { selectModels } from "../modelsSlice";
 import { selectModelById } from "./selectModelById";
 import { Caption, Table, TableCell, TableContainer, TableRow } from "./styled";
 
-const ModelDetails = ({modelsList}) => {
+const ModelDetails = () => {
 
+  const modelsList = useSelector( state => selectModels(state));
   const { id } = useParams();
   const model = selectModelById( modelsList, id);
   return (
     <Wrapper>
-      <Header>Model: {model.nazwa} </Header>
-      <TableContainer>
+     <Header>Model: {model.nazwa} </Header>
+       <TableContainer>
         <Table>
           <Caption>Właściowści modelu:</Caption>
 
