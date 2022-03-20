@@ -1,6 +1,6 @@
 import { Header } from "../../common/Header";
 import { Wrapper } from "../../common/Wrapper/index.js";
-import { Arrow, Button, ButtonText, Container, Field, Form, Input, Title } from "./styled";
+import { Arrow, Button, ButtonText, Container, Field, Form, Input, Title } from "../../common/Form";
 
 const Authentications = () => (
   <Wrapper>
