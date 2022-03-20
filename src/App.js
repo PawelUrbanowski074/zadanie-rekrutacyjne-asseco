@@ -1,5 +1,6 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import Navigation from "./common/Navigation";
+import AddModel from "./features/addModel";
 
 import Authentications from "./features/authentication";
 import ModelDetails from "./features/modelDetails";
@@ -46,7 +47,7 @@ const App = () => (
         <ModelsList modelsList={modelsList} />
       </Route>
       <Route path={toNewModel()}>
-        <div>dodaj nowy model</div>
+        <AddModel />
       </Route>
       <Route path="/">
         <Redirect to={toModels()}/>
