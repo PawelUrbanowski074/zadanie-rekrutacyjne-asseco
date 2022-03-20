@@ -39,6 +39,7 @@ export const TableRow = styled.tr`
 
   &:hover {
     filter: brightness(120%);
+    border: 3px solid #02481f;
   }
 `;
 
