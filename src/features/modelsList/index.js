@@ -3,10 +3,14 @@ import { Wrapper } from "../../common/Wrapper/index.js";
 import { Link } from "react-router-dom";
 
 import { Button, Item, List, ModelName, Section, StyledLink } from "./styled";
+import { useSelector, useDispatch } from "react-redux";
+import { removeModel, selectModels } from "../modelsSlice";
 
 
-const ModelsList = ({ modelsList }) => {
-  console.log(modelsList)
+const ModelsList = () => {
+
+  const modelsList = useSelector( state => selectModels(state));
+  const dispatch = useDispatch();
 
   return (
     <Wrapper>
@@ -24,7 +28,9 @@ const ModelsList = ({ modelsList }) => {
               <Link to={`modelsList/${model.id}`}>
                 <Button>Pokaż szczegóły</Button>
               </Link>
-              <Button>Usuń model</Button>
+              <Button
+                onClick={() => dispatch(removeModel(model.id))}
+              >Usuń model</Button>
             </Item>
           ))}
         </List>
