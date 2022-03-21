@@ -28,11 +28,12 @@ function* fetchExampleModelsHandler() {
   }
 }
 
-function* saveModelsInLocalStorageHangler() {
+function* saveModelsInLocalStorageHandler() {
   const models = yield select(selectModels);
   yield call(saveModelsInLocalStorage, models);
 }
 
 export function* modelsSaga() {
   yield takeLatest(fetchExampleModels.type, fetchExampleModelsHandler);
+  yield takeEvery("*", saveModelsInLocalStorageHandler);
 };
