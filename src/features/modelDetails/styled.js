@@ -1,8 +1,7 @@
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 import styled from "styled-components";
 
 export const TableContainer = styled.div`
-  margin: 50px 0 ;
+  margin: 30px 0 ;
   overflow-x: auto;
 
   @media(max-width: 767px) {
@@ -12,48 +11,60 @@ export const TableContainer = styled.div`
 
 export const Table = styled.table`
   border-collapse: collapse;
-  width: 80%;
-  margin: auto;
+  width: 100%;
   color: white;
   border: 3px solid #02481f;
   border-radius: 3px;
   box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
 `;
 
-export const Caption = styled.caption`
+export const Container = styled.div`
   color: white;
   background-color: #025a28;
-  text-align: left;
-  margin: 15px 0px;
-  padding: 10px 20px;
+  box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
   border: 3px solid #02481f;
   border-radius: 3px;
+  padding: 10px 20px;
+  margin: 20px auto 0 auto;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media(max-width: 767px) {
+    
+  }
+`;
+
+export const TableTitle = styled.h2`
+  margin: 0;
   font-size: 22px;
   font-weight: bold;
-  box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
-
+  flex-grow: 1;
+  text-align: left;
+  
+  @media(max-width: 767px) {
+    margin: 5px;
+  }
 `;
 
-export const TableRow = styled.tr`
+export const Button = styled.button`
   background-color: #025a28;
-
-  &:nth-child(even) {
-    filter: brightness(110%);
-  }
+  border: none;
+  color: white;
+  padding: 5px;
+  margin: 0 5px;
+  border-bottom: 1px solid white;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: 0.3s;
 
   &:hover {
     filter: brightness(120%);
-    border: 3px solid #02481f;
+    cursor: pointer;
   }
-`;
-
-export const TableCell = styled.td`
-  border: 3px solid #02481f;
-  padding: 15px;
-  text-align: center;
-  vertical-align: middle;
 
   @media(max-width: 767px) {
-    padding: 10px; ;
+    font-size: 16px;
+    margin: 5px;
   }
 `;
