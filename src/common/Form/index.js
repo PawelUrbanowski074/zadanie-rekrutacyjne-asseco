@@ -21,6 +21,7 @@ export const Container = styled.div`
 export const Title = styled.h2`
   color: white;
   font-size: 32px;
+  border-bottom: 2px solid #02481f;
 
   @media( max-width: 767px) {
     font-size: 28px;
@@ -30,7 +31,7 @@ export const Title = styled.h2`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  margin: 0 60px;
+  margin: 0 20px;
 
   @media (max-width: 767px) {
     margin: 0 20px;
@@ -46,22 +47,27 @@ export const Field = styled.div`
   font-size: 22px;
   margin-bottom: 20px;
 
-  ${({ equalGrid }) => equalGrid && css`
-    grid-template-columns: 1fr 1fr;
+  ${({ moreText }) => moreText && css`
+    grid-template-columns: 2fr 1fr;
   `}
 
   ${({ buttons }) => buttons && css`
     grid-template-columns: 1fr 1fr;
-  `}
 
+  `}
+  
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
     grid-gap: 10px;
 
+    ${({ buttons }) => buttons && css`
+      grid-template-columns: 1fr 1fr;
+    `}
   }
 `;
 
 export const Input = styled.input`
+  width: 100%;
   background-color: #025a28;
   color: white;
   padding: 5px 20px;
