@@ -23,6 +23,10 @@ const AddModel = () => {
   const onFormSubmit = (event) => {
     // event.preventDefault();
 
+    if(!nameContent) {
+      return;
+    }
+
     dispatch((addModel({
       id: nanoid(),
       nazwa: nameContent,
@@ -60,15 +64,16 @@ const AddModel = () => {
       <Container big>
         <Title>Wprowadź dane:</Title>
         <Form onSubmit={onFormSubmit} onReset={onFormReset}> 
-          <Field equalGrid>
+          <Field moreText>
             Nazwa modelu:
             <Input 
               value={nameContent}
               onChange={({ target }) => setNameContent(target.value.trim())}
+              required
             />
           </Field>
 
-          <Field equalGrid>
+          <Field moreText>
             Data:
             <Input 
               type="date" 
@@ -77,7 +82,7 @@ const AddModel = () => {
             />
           </Field>
 
-          <Field equalGrid>
+          <Field moreText>
             Frakcja testowa:
             <Input 
               type="number" 
@@ -88,8 +93,8 @@ const AddModel = () => {
             />
           </Field>
 
-          <Field equalGrid>
-            N trees:
+          <Field moreText>
+            Liczba użytych drzew [n_trees]:
             <Input 
               type="number" 
               min="0" 
@@ -99,8 +104,8 @@ const AddModel = () => {
             />
           </Field>
 
-          <Field equalGrid>
-            Głębokość interakcji:
+          <Field moreText>
+            Głębokość interakcji drzew [interaction_depth]:
             <Input 
               type="number" 
               min="0" 
@@ -110,8 +115,8 @@ const AddModel = () => {
             />
           </Field>
 
-          <Field equalGrid>
-            Shrinkage:
+          <Field moreText>
+            Współczynnik uczenia [shrinkage]:
             <Input 
               type="number" 
               min="0" 
@@ -121,8 +126,8 @@ const AddModel = () => {
             />
           </Field>
 
-          <Field equalGrid>
-            N minobsinnode:
+          <Field moreText>
+            Min. l. obserwacji [n_minobsinnode]:
             <Input 
               type="number" 
               min="0" 
@@ -132,7 +137,7 @@ const AddModel = () => {
             />
           </Field>
 
-          <Field equalGrid>
+          <Field moreText>
             Cv folds:
             <Input 
               type="number" 
@@ -143,7 +148,7 @@ const AddModel = () => {
             />
           </Field>
 
-          <Field equalGrid>
+          <Field moreText>
             Threshold:
             <Input 
               type="number" 
@@ -154,7 +159,7 @@ const AddModel = () => {
             />
           </Field>
 
-          <Field equalGrid>
+          <Field moreText>
             Status:
             <Input 
               as="select" 
