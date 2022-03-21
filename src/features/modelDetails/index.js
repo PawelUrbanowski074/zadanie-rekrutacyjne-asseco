@@ -4,7 +4,10 @@ import { Header } from "../../common/Header";
 import { Wrapper } from "../../common/Wrapper/index.js";
 import { selectModels } from "../modelsSlice";
 import { selectModelById } from "./selectModelById";
-import { Caption, Table, TableCell, TableContainer, TableRow } from "./styled";
+import { Button, TableTitle, Container, Table, TableContainer } from "./styled";
+import TableRow from "./TableRow";
+
+import { toReport } from "../../routes";
 
 const ModelDetails = () => {
 
@@ -14,60 +17,30 @@ const ModelDetails = () => {
   return (
     <Wrapper>
       <Header>Model: {model.nazwa} </Header>
+      <Container>
+        <TableTitle>
+          Właściowści modelu:
+        </TableTitle>
+        <a href={process.env.PUBLIC_URL + "/report.html"} >
+          <Button >Wyświetl raport</Button>
+        </a>
+        <a href={process.env.PUBLIC_URL + "/report.html"} download={process.env.PUBLIC_URL + "/report.html"}>
+          <Button >Pobierz raport</Button>
+        </a>
+
+      </Container>
       <TableContainer>
         <Table>
-          <Caption>Właściowści modelu:</Caption>
-
           <tbody>
-            <TableRow>
-              <TableCell>Nazwa modelu:</TableCell>
-              <TableCell>{model.nazwa}</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>Data:</TableCell>
-              <TableCell>{model.data_na}</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>Frakcja Testowa:</TableCell>
-              <TableCell>{model.frakcja_testowa}</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>N trees:</TableCell>
-              <TableCell>{model.n_trees}</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>Głębokość interakcji:</TableCell>
-              <TableCell>{model.interaction_depth}</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>Shrinkage:</TableCell>
-              <TableCell>{model.shrinkage}</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>N minobsinnode:</TableCell>
-              <TableCell>{model.n_minobsinnode}</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>CV Folds:</TableCell>
-              <TableCell>{model.cv_folds}</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>Threshold:</TableCell>
-              <TableCell>{model.threshold}</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>Status:</TableCell>
-              <TableCell>{model.status}</TableCell>
-            </TableRow>
+            <TableRow title="Data:" property={model.data_na} />
+            <TableRow title="Frakcja testowa:" property={model.frakcja_testowa} />
+            <TableRow title="N trees" property={model.n_trees} />
+            <TableRow title="Głębokość interakcji:" property={model.interaction_depth} />
+            <TableRow title="Shrinkage:" property={model.shrinkage} />
+            <TableRow title="N minobsinnode:" property={model.n_minobsinnode} />
+            <TableRow title="CV Folds:" property={model.cv_folds} />
+            <TableRow title="Threshold:" property={model.threshold} />
+            <TableRow title="Status:" property={model.status} />
           </tbody>
         </Table>
       </TableContainer>
