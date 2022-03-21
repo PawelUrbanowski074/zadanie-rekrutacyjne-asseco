@@ -21,7 +21,7 @@ const AddModel = () => {
   const [statusContent, setStatusContent] = useState("new");
   
   const onFormSubmit = (event) => {
-    // event.preventDefault();
+    event.preventDefault();
 
     if(!nameContent) {
       return;
@@ -40,6 +40,9 @@ const AddModel = () => {
       threshold: tresholdContent,
       status: statusContent,
     })));
+
+    onFormReset(event);
+    alert("Nowy model dodany pomyślnie!")
   };
 
   const onFormReset = (event) => {
