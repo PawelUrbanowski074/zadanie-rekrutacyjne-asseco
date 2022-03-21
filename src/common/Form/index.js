@@ -11,11 +11,20 @@ export const Container = styled.div`
   ${({ big }) => big && css`
     max-width: 800px;
   `}
+
+  @media( max-width: 767px) {
+    margin: 30px auto;
+    padding: 10px 20px;
+  }
 `;
 
 export const Title = styled.h2`
   color: white;
   font-size: 32px;
+
+  @media( max-width: 767px) {
+    font-size: 28px;
+  }
 `;
 
 export const Form = styled.form`
@@ -47,6 +56,8 @@ export const Field = styled.div`
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
+    grid-gap: 10px;
+
   }
 `;
 
@@ -91,13 +102,6 @@ export const Button = styled.button`
 
   &:active {
     border: 2px solid #283754;
-  }
-
-  &:focus {
-    background: #283754;
-    color: #fab856;
-    outline: 3px #fab856 solid!important;
-    outline-offset: 0;
   }
 
   &:hover {

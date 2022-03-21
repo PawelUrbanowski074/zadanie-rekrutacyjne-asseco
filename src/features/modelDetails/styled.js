@@ -2,8 +2,12 @@ import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 import styled from "styled-components";
 
 export const TableContainer = styled.div`
-  margin-top: 50px;
+  margin: 50px 0 ;
   overflow-x: auto;
+
+  @media(max-width: 767px) {
+    margin: 20px 0;
+  }
 `;
 
 export const Table = styled.table`
@@ -48,4 +52,8 @@ export const TableCell = styled.td`
   padding: 15px;
   text-align: center;
   vertical-align: middle;
+
+  @media(max-width: 767px) {
+    padding: 10px; ;
+  }
 `;

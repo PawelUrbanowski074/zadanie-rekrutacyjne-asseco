@@ -20,6 +20,7 @@ export const Item = styled.li`
   padding: 10px 0;
   border-bottom: solid 2px #025a28;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   word-break: break-word; 
 `;
@@ -27,7 +28,20 @@ export const Item = styled.li`
 export const ModelName = styled.span`
   padding: 0px 15px;
   flex-grow: 1;
+
+  @media (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 `; 
+
+export const Buttons = styled.div`
+  @media (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+`;
 
 export const StyledLink = styled(Link)`
   color:  white; 
