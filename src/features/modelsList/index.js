@@ -12,7 +12,6 @@ const ModelsList = () => {
 
   const modelsList = useSelector(state => selectModels(state));
   const dispatch = useDispatch();
-  console.log(modelsList);
   return (
     <Wrapper>
       <Header> Lista modeli</Header>
