@@ -10,7 +10,254 @@
     "n_minobsinnode": 15,
     "cv_folds": 2,
     "threshold": 0.5,
-    "status": "ready"
+    "status": "ready",
+    "preprocesor": "preprocessor_1.01.001",
+    "postprocesor": "postprocessor_ko_1.01.001",
+    "zbior_danych": "wynik_wsad_cechy_MF_1_1_ko",
+    "cechy": [
+      {
+        "klucz": "O_PL0201_PKD_SEKCJA",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_PLUB0104_TYP_UBEZPIECZENIA",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_PLUB0201_SREDNIA_CH_3M",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_UB0101_WIEK",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_UB0102_PLEC",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_UB0403_L_PLAT_3MC",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_UB0405_L_PLAT_3MC_JEST_CHOR",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_UB0503_L_ZOZOW_2Y",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_UB0504_PROCENT_KOREKT_2Y",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_UB0506_S_DNI_NIEZD_2Y",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_UB0508_L_KODOW_CHOROB_2Y",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_UB0601_L_NIESTAW_KO_2Y",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_ZLA0104_LICZBADNINDP",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_ZLA0105_LICZBADNINDP_VS_SREDNIA",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_ZLA0106_SZPITAL",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_ZLA0107_WSKAZANIALEK",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_ZLA0116_KOBIETA_W_CIAZY",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_ZLA0117_KONTYNUACJA",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_ZLA0118_OPIEKA",
+        "wartosc": 1
+      },
+      {
+        "klucz": "O_ZLA0119_GRUPACHOROB",
+        "wartosc": 1
+      }
+    ],
+    "cechy_all": [
+      {
+        "klucz": "ID_ZLA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "ID_PL",
+        "wartosc": 2
+      },
+      {
+        "klucz": "ID_UB",
+        "wartosc": 2
+      },
+      {
+        "klucz": "ID_LEKARZ",
+        "wartosc": 2
+      },
+      {
+        "klucz": "ID_ZOZ",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_STAN_NA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_LEK0103_PROCENT_KOREKT_2Y",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_PL0201_PKD_SEKCJA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_PLUB0104_TYP_UBEZPIECZENIA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_PLUB0201_SREDNIA_CH_3M",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_UB0101_WIEK",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_UB0102_PLEC",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_UB0403_L_PLAT_3MC",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_UB0405_L_PLAT_3MC_JEST_CHOR",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_UB0503_L_ZOZOW_2Y",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_UB0504_PROCENT_KOREKT_2Y",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_UB0506_S_DNI_NIEZD_2Y",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_UB0508_L_KODOW_CHOROB_2Y",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_UB0601_L_NIESTAW_KO_2Y",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_ZLA0104_LICZBADNINDP",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_ZLA0105_LICZBADNINDP_VS_SREDNIA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_ZLA0106_SZPITAL",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_ZLA0107_WSKAZANIALEK",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_ZLA0116_KOBIETA_W_CIAZY",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_ZLA0117_KONTYNUACJA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_ZLA0118_OPIEKA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_ZLA0119_GRUPACHOROB",
+        "wartosc": 2
+      },
+      {
+        "klucz": "O_ZOZ0103_PROCENT_KOREKT_2Y",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY01_KO_TRAFNOSC",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY02_KO_STRATA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY03_KO_LDNI",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY04_CZY_KONTROLA_KO_TRAFNOSC",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY05_CZY_KONTROLA_KO_STRATA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY06_CZY_KONTROLA_KO_LDNI",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY11_KW_TRAFNOSC",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY12_KW_STRATA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY13_KW_LDNI",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY14_CZY_KONTROLA_KW_TRAFNOSC",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY15_CZY_KONTROLA_KW_STRATA",
+        "wartosc": 2
+      },
+      {
+        "klucz": "WY16_CZY_KONTROLA_KW_LDNI",
+        "wartosc": 2
+      }
+    ]
   },
   {
     "id": 2,
@@ -23,6 +270,253 @@
     "n_minobsinnode": 20,
     "cv_folds": 3,
     "threshold": 0.6,
-    "status": "new"
+    "status": "new",
+    "preprocesor": "preprocessor_1.01.005",
+    "postprocesor": "postprocessor_ko_1.01.005",
+    "zbior_danych": "wynik_wsad_cechy_MF_1_5_ko",
+    "cechy": [
+      {
+        "klucz": "O_PL0201_PKD_SEKCJA",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_PLUB0104_TYP_UBEZPIECZENIA",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_PLUB0201_SREDNIA_CH_3M",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_UB0101_WIEK",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_UB0102_PLEC",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_UB0403_L_PLAT_3MC",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_UB0405_L_PLAT_3MC_JEST_CHOR",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_UB0503_L_ZOZOW_2Y",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_UB0504_PROCENT_KOREKT_2Y",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_UB0506_S_DNI_NIEZD_2Y",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_UB0508_L_KODOW_CHOROB_2Y",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_UB0601_L_NIESTAW_KO_2Y",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_ZLA0104_LICZBADNINDP",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_ZLA0105_LICZBADNINDP_VS_SREDNIA",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_ZLA0106_SZPITAL",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_ZLA0107_WSKAZANIALEK",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_ZLA0116_KOBIETA_W_CIAZY",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_ZLA0117_KONTYNUACJA",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_ZLA0118_OPIEKA",
+        "wartosc": 3
+      },
+      {
+        "klucz": "O_ZLA0119_GRUPACHOROB",
+        "wartosc": 3
+      }
+    ],
+    "cechy_all": [
+      {
+        "klucz": "ID_ZLA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "ID_PL",
+        "wartosc": 4
+      },
+      {
+        "klucz": "ID_UB",
+        "wartosc": 4
+      },
+      {
+        "klucz": "ID_LEKARZ",
+        "wartosc": 4
+      },
+      {
+        "klucz": "ID_ZOZ",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_STAN_NA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_LEK0103_PROCENT_KOREKT_2Y",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_PL0201_PKD_SEKCJA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_PLUB0104_TYP_UBEZPIECZENIA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_PLUB0201_SREDNIA_CH_3M",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_UB0101_WIEK",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_UB0102_PLEC",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_UB0403_L_PLAT_3MC",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_UB0405_L_PLAT_3MC_JEST_CHOR",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_UB0503_L_ZOZOW_2Y",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_UB0504_PROCENT_KOREKT_2Y",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_UB0506_S_DNI_NIEZD_2Y",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_UB0508_L_KODOW_CHOROB_2Y",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_UB0601_L_NIESTAW_KO_2Y",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_ZLA0104_LICZBADNINDP",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_ZLA0105_LICZBADNINDP_VS_SREDNIA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_ZLA0106_SZPITAL",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_ZLA0107_WSKAZANIALEK",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_ZLA0116_KOBIETA_W_CIAZY",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_ZLA0117_KONTYNUACJA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_ZLA0118_OPIEKA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_ZLA0119_GRUPACHOROB",
+        "wartosc": 4
+      },
+      {
+        "klucz": "O_ZOZ0103_PROCENT_KOREKT_2Y",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY01_KO_TRAFNOSC",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY02_KO_STRATA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY03_KO_LDNI",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY04_CZY_KONTROLA_KO_TRAFNOSC",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY05_CZY_KONTROLA_KO_STRATA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY06_CZY_KONTROLA_KO_LDNI",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY11_KW_TRAFNOSC",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY12_KW_STRATA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY13_KW_LDNI",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY14_CZY_KONTROLA_KW_TRAFNOSC",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY15_CZY_KONTROLA_KW_STRATA",
+        "wartosc": 4
+      },
+      {
+        "klucz": "WY16_CZY_KONTROLA_KW_LDNI",
+        "wartosc": 4
+      }
+    ]
   }
 ]
