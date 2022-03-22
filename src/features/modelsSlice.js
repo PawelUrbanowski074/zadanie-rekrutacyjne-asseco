@@ -6,6 +6,7 @@ const modelsSlice = createSlice({
   initialState:{
     models: getModelsFromLocalStorage(),
     loading: false,
+    logged: false,
   },
   reducers: {
     addModel: ({ models }, { payload: model }) => {
@@ -25,6 +26,12 @@ const modelsSlice = createSlice({
     fetchExampleModelsError: state => {
       state.loading = false;
     },
+    fetchLogin: (state) => {
+      state.logged = true;
+    },
+    fetchLogout: (state) => {
+      state.logged = false;
+    }
   },
 });
 
@@ -33,12 +40,15 @@ export const {
   removeModel,
   fetchExampleModels,
   fetchExampleModelsSuccess,
-  fetchExampleModelsError
+  fetchExampleModelsError,
+  fetchLogin,
+  fetchLogout
 } = modelsSlice.actions;
 
 const selectModelsState = state => state.models;
 
 export const selectModels = state => selectModelsState(state).models;
 export const selectExampleModelsLoading = state => selectModelsState(state).loading;
+export const selectIsLogged = state => selectModelsState(state).logged;
 
 export default modelsSlice.reducer;
