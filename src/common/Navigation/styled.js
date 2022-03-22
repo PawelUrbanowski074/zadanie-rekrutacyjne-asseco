@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { NavLink } from "react-router-dom";
 
 const activeclassname = "active";
@@ -13,9 +13,19 @@ export const List = styled.ul`
   box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
 `;
 
+export const ItemContainer = styled.div`
+	margin: 0 auto;
+	display: flex;
+`;
+
 export const Item = styled.li`
 	font-size: 26px;
 	padding: 20px;
+`;
+
+
+export const LogOut = styled.li`
+	padding: 10px;
 `;
 
 export const StyledNavLink = styled(NavLink).attrs(() => ({
