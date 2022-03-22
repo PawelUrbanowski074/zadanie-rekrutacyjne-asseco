@@ -1,6 +1,6 @@
 import { Header } from "../../common/Header";
 import { Wrapper } from "../../common/Wrapper";
-import { Button, Container, Field, Form, Input, Option, Select, Title } from "../../common/Form";
+import { Button, Container, Field, Form, Input, Option, Title } from "../../common/Form";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addModel } from "../modelsSlice";
