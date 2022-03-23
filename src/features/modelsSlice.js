@@ -1,6 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getModelsFromLocalStorage } from "./localStorage";
 
+const obliczFraud = () => {
+  alert("Tu następuje dokonanie obliczeń");
+  const min = Math.ceil(0);
+  const max = Math.floor(100);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 const modelsSlice = createSlice({
   name: "models",
   initialState:{
@@ -15,6 +22,11 @@ const modelsSlice = createSlice({
     removeModel: ({ models }, {payload: modelId }) => {
       const index = models.findIndex(({ id }) => id === modelId);
       models.splice(index, 1);
+    },
+    calculateFrauds: ({models}, {payload: modelId}) => {
+      const index = models.findIndex(({ id }) =>  id === modelId )
+
+      models[index].wynik_fraud = obliczFraud();
     },
     fetchExampleModels: state => {
       state.loading = true;
@@ -38,6 +50,7 @@ const modelsSlice = createSlice({
 export const {
   addModel, 
   removeModel,
+  calculateFrauds,
   fetchExampleModels,
   fetchExampleModelsSuccess,
   fetchExampleModelsError,
