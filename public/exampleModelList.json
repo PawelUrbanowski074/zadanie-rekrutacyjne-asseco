@@ -257,7 +257,8 @@
         "klucz": "WY16_CZY_KONTROLA_KW_LDNI",
         "wartosc": 2
       }
-    ]
+    ],
+    "wynik_fraud":0
   },
   {
     "id": 2,
@@ -517,6 +518,7 @@
         "klucz": "WY16_CZY_KONTROLA_KW_LDNI",
         "wartosc": 4
       }
-    ]
+    ],
+    "wynik_fraud": 0
   }
 ]
