@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getModelsFromLocalStorage } from "./localStorage";
+import { getIsLoggedFromLocalStorage, getModelsFromLocalStorage, saveIsLoggedInLocalStorage } from "./localStorage";
 
 const obliczFraud = () => {
   alert("Tu następuje dokonanie obliczeń");
@@ -13,7 +13,7 @@ const modelsSlice = createSlice({
   initialState:{
     models: getModelsFromLocalStorage(),
     loading: false,
-    logged: false,
+    logged: getIsLoggedFromLocalStorage(),
   },
   reducers: {
     addModel: ({ models }, { payload: model }) => {
@@ -40,9 +40,11 @@ const modelsSlice = createSlice({
     },
     fetchLogin: (state) => {
       state.logged = true;
+      saveIsLoggedInLocalStorage(true);
     },
     fetchLogout: (state) => {
       state.logged = false;
+      saveIsLoggedInLocalStorage(false);
     }
   },
 });
