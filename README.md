@@ -1,6 +1,27 @@
-# Pawel Urbanowski - Task List in React.js
+# Pawel Urbanowski - Zadanie rekrutacyjne - Asseco
 
 ## Preview: [Demo](https://pawelurbanowski074.github.io/zadanie-rekrutacyjne-asseco/)
+
+### Usage
+1. Log in to the application with your username and password (any values).
+2. Download example models from database using "Pobierz modele" button.
+3. To check the properties of a model, click its name or the "Show details" button.
+4. To delete models from database click "Usuń model" button.
+5. To show model report, enter any models details and click "Wyświetl raport" button. 
+6. To download model report, enter any models details and click "Pobierz raport" button.
+7. To make a prediction for a model, go to its details and click the "Wywołaj predykcję" button in the "Cechy modelu" section.
+8. To add a new model, select the "Nowy model" section in the navigation. Complete the form correctly and click "Wyślij model" button. To reset the form, click "reset form".  
+
+### Used technologies
+- HTML
+- CSS
+- JavaScript
+- Flexbox
+- Grid
+- React-Dom, React-Redux, Redux-Saga, React Hooks, React Router
+- Styled components
+- Local Storage
+
 
 ## Getting Started with Create React App
 
@@ -42,33 +63,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
